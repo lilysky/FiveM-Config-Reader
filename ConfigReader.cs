@@ -257,7 +257,7 @@ namespace Config
                 key = key.ToLower();
                 if (dict.ContainsKey("[" + section + "]" + key))
                 {
-                    // TRYS TO CONVERT A STRING TO AN INT
+                    // TRYS TO CONVERT A STRING TO AN BOOL
                     bool result;
                     if (bool.TryParse(dict["[" + section + "]" + key], out result))
                     {
